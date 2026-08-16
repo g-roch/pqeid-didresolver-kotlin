@@ -128,7 +128,9 @@ mavenPublishing {
     // when publishing to https://central.sonatype.com/
     publishToMavenCentral(com.vanniktech.maven.publish.SonatypeHost.CENTRAL_PORTAL, automaticRelease = true)
 
-    signAllPublications()
+    // PQEID: disabled for local mavenLocal() install (no GPG signatory configured here) -
+    // this is a purely local build, not intended to be pushed/released.
+    // signAllPublications()
 
     coordinates(group.toString(), "didresolver", version.toString())
 

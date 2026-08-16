@@ -643,29 +643,29 @@ internal object IntegrityCheckingUniffiLib {
         uniffiCheckApiChecksums(this)
     }
     external fun uniffi_did_webvh_checksum_method_webverifiablehistory_get_did(
-    ): Short
+    ): Int
     external fun uniffi_did_webvh_checksum_method_webverifiablehistory_get_did_doc(
-    ): Short
+    ): Int
     external fun uniffi_did_webvh_checksum_method_webverifiablehistory_get_did_doc_obj_thread_safe(
-    ): Short
+    ): Int
     external fun uniffi_did_webvh_checksum_method_webverifiablehistory_get_did_log(
-    ): Short
+    ): Int
     external fun uniffi_did_webvh_checksum_method_webverifiablehistory_get_did_method_parameters(
-    ): Short
+    ): Int
     external fun uniffi_did_webvh_checksum_method_webverifiablehistorydidmethodparameters_get_scid(
-    ): Short
+    ): Int
     external fun uniffi_did_webvh_checksum_method_webverifiablehistorydidmethodparameters_get_update_keys(
-    ): Short
+    ): Int
     external fun uniffi_did_webvh_checksum_method_webverifiablehistorydidmethodparameters_is_deactivated(
-    ): Short
+    ): Int
     external fun uniffi_did_webvh_checksum_method_webverifiablehistoryid_get_scid(
-    ): Short
+    ): Int
     external fun uniffi_did_webvh_checksum_method_webverifiablehistoryid_get_url(
-    ): Short
+    ): Int
     external fun uniffi_did_webvh_checksum_constructor_webverifiablehistory_resolve(
-    ): Short
+    ): Int
     external fun uniffi_did_webvh_checksum_constructor_webverifiablehistoryid_parse_did_webvh(
-    ): Short
+    ): Int
     external fun ffi_did_webvh_uniffi_contract_version(
     ): Int
 
@@ -736,7 +736,7 @@ internal object UniffiLib {
     external fun ffi_did_webvh_rust_future_free_u8(`handle`: Long,
     ): Unit
     external fun ffi_did_webvh_rust_future_complete_u8(`handle`: Long,uniffi_out_err: UniffiRustCallStatus, 
-    ): Byte
+    ): Int
     external fun ffi_did_webvh_rust_future_poll_i8(`handle`: Long,`callback`: UniffiRustFutureContinuationCallback,`callbackData`: Long,
     ): Unit
     external fun ffi_did_webvh_rust_future_cancel_i8(`handle`: Long,
@@ -752,7 +752,7 @@ internal object UniffiLib {
     external fun ffi_did_webvh_rust_future_free_u16(`handle`: Long,
     ): Unit
     external fun ffi_did_webvh_rust_future_complete_u16(`handle`: Long,uniffi_out_err: UniffiRustCallStatus, 
-    ): Short
+    ): Int
     external fun ffi_did_webvh_rust_future_poll_i16(`handle`: Long,`callback`: UniffiRustFutureContinuationCallback,`callbackData`: Long,
     ): Unit
     external fun ffi_did_webvh_rust_future_cancel_i16(`handle`: Long,
@@ -840,40 +840,40 @@ private fun uniffiCheckContractApiVersion(lib: IntegrityCheckingUniffiLib) {
 }
 @Suppress("UNUSED_PARAMETER")
 private fun uniffiCheckApiChecksums(lib: IntegrityCheckingUniffiLib) {
-    if (lib.uniffi_did_webvh_checksum_method_webverifiablehistory_get_did() != 18267.toShort()) {
+    if (lib.uniffi_did_webvh_checksum_method_webverifiablehistory_get_did() != 18267) {
         throw RuntimeException("UniFFI API checksum mismatch: try cleaning and rebuilding your project")
     }
-    if (lib.uniffi_did_webvh_checksum_method_webverifiablehistory_get_did_doc() != 7820.toShort()) {
+    if (lib.uniffi_did_webvh_checksum_method_webverifiablehistory_get_did_doc() != 7820) {
         throw RuntimeException("UniFFI API checksum mismatch: try cleaning and rebuilding your project")
     }
-    if (lib.uniffi_did_webvh_checksum_method_webverifiablehistory_get_did_doc_obj_thread_safe() != 50174.toShort()) {
+    if (lib.uniffi_did_webvh_checksum_method_webverifiablehistory_get_did_doc_obj_thread_safe() != 50174) {
         throw RuntimeException("UniFFI API checksum mismatch: try cleaning and rebuilding your project")
     }
-    if (lib.uniffi_did_webvh_checksum_method_webverifiablehistory_get_did_log() != 62763.toShort()) {
+    if (lib.uniffi_did_webvh_checksum_method_webverifiablehistory_get_did_log() != 62763) {
         throw RuntimeException("UniFFI API checksum mismatch: try cleaning and rebuilding your project")
     }
-    if (lib.uniffi_did_webvh_checksum_method_webverifiablehistory_get_did_method_parameters() != 27913.toShort()) {
+    if (lib.uniffi_did_webvh_checksum_method_webverifiablehistory_get_did_method_parameters() != 27913) {
         throw RuntimeException("UniFFI API checksum mismatch: try cleaning and rebuilding your project")
     }
-    if (lib.uniffi_did_webvh_checksum_method_webverifiablehistorydidmethodparameters_get_scid() != 26418.toShort()) {
+    if (lib.uniffi_did_webvh_checksum_method_webverifiablehistorydidmethodparameters_get_scid() != 26418) {
         throw RuntimeException("UniFFI API checksum mismatch: try cleaning and rebuilding your project")
     }
-    if (lib.uniffi_did_webvh_checksum_method_webverifiablehistorydidmethodparameters_get_update_keys() != 2362.toShort()) {
+    if (lib.uniffi_did_webvh_checksum_method_webverifiablehistorydidmethodparameters_get_update_keys() != 2362) {
         throw RuntimeException("UniFFI API checksum mismatch: try cleaning and rebuilding your project")
     }
-    if (lib.uniffi_did_webvh_checksum_method_webverifiablehistorydidmethodparameters_is_deactivated() != 31397.toShort()) {
+    if (lib.uniffi_did_webvh_checksum_method_webverifiablehistorydidmethodparameters_is_deactivated() != 31397) {
         throw RuntimeException("UniFFI API checksum mismatch: try cleaning and rebuilding your project")
     }
-    if (lib.uniffi_did_webvh_checksum_method_webverifiablehistoryid_get_scid() != 61206.toShort()) {
+    if (lib.uniffi_did_webvh_checksum_method_webverifiablehistoryid_get_scid() != 61206) {
         throw RuntimeException("UniFFI API checksum mismatch: try cleaning and rebuilding your project")
     }
-    if (lib.uniffi_did_webvh_checksum_method_webverifiablehistoryid_get_url() != 8017.toShort()) {
+    if (lib.uniffi_did_webvh_checksum_method_webverifiablehistoryid_get_url() != 8017) {
         throw RuntimeException("UniFFI API checksum mismatch: try cleaning and rebuilding your project")
     }
-    if (lib.uniffi_did_webvh_checksum_constructor_webverifiablehistory_resolve() != 35941.toShort()) {
+    if (lib.uniffi_did_webvh_checksum_constructor_webverifiablehistory_resolve() != 35941) {
         throw RuntimeException("UniFFI API checksum mismatch: try cleaning and rebuilding your project")
     }
-    if (lib.uniffi_did_webvh_checksum_constructor_webverifiablehistoryid_parse_did_webvh() != 21008.toShort()) {
+    if (lib.uniffi_did_webvh_checksum_constructor_webverifiablehistoryid_parse_did_webvh() != 21008) {
         throw RuntimeException("UniFFI API checksum mismatch: try cleaning and rebuilding your project")
     }
 }

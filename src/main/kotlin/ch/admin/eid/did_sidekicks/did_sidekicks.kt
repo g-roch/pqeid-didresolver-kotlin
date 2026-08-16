@@ -659,143 +659,143 @@ internal object IntegrityCheckingUniffiLib {
         uniffiCheckApiChecksums(this)
     }
     external fun uniffi_did_sidekicks_checksum_func_get_key_from_did_doc(
-    ): Short
+    ): Int
     external fun uniffi_did_sidekicks_checksum_method_diddoc_get_assertion_method(
-    ): Short
+    ): Int
     external fun uniffi_did_sidekicks_checksum_method_diddoc_get_authentication(
-    ): Short
+    ): Int
     external fun uniffi_did_sidekicks_checksum_method_diddoc_get_capability_delegation(
-    ): Short
+    ): Int
     external fun uniffi_did_sidekicks_checksum_method_diddoc_get_capability_invocation(
-    ): Short
+    ): Int
     external fun uniffi_did_sidekicks_checksum_method_diddoc_get_context(
-    ): Short
+    ): Int
     external fun uniffi_did_sidekicks_checksum_method_diddoc_get_controller(
-    ): Short
+    ): Int
     external fun uniffi_did_sidekicks_checksum_method_diddoc_get_deactivated(
-    ): Short
+    ): Int
     external fun uniffi_did_sidekicks_checksum_method_diddoc_get_id(
-    ): Short
+    ): Int
     external fun uniffi_did_sidekicks_checksum_method_diddoc_get_key(
-    ): Short
+    ): Int
     external fun uniffi_did_sidekicks_checksum_method_diddoc_get_key_by_fragment(
-    ): Short
+    ): Int
     external fun uniffi_did_sidekicks_checksum_method_diddoc_get_key_by_method_id(
-    ): Short
+    ): Int
     external fun uniffi_did_sidekicks_checksum_method_diddoc_get_profile_version(
-    ): Short
+    ): Int
     external fun uniffi_did_sidekicks_checksum_method_diddoc_get_verification_method(
-    ): Short
+    ): Int
     external fun uniffi_did_sidekicks_checksum_method_diddoc_to_json(
-    ): Short
+    ): Int
     external fun uniffi_did_sidekicks_checksum_method_diddocextended_get_did_doc(
-    ): Short
+    ): Int
     external fun uniffi_did_sidekicks_checksum_method_diddocextended_get_did_method_parameters(
-    ): Short
+    ): Int
     external fun uniffi_did_sidekicks_checksum_method_didlogentryjsonschema_get_json_schema(
-    ): Short
+    ): Int
     external fun uniffi_did_sidekicks_checksum_method_didlogentryvalidator_validate(
-    ): Short
+    ): Int
     external fun uniffi_did_sidekicks_checksum_method_didmethodparameter_get_bool_value(
-    ): Short
+    ): Int
     external fun uniffi_did_sidekicks_checksum_method_didmethodparameter_get_f64_value(
-    ): Short
+    ): Int
     external fun uniffi_did_sidekicks_checksum_method_didmethodparameter_get_i64_value(
-    ): Short
+    ): Int
     external fun uniffi_did_sidekicks_checksum_method_didmethodparameter_get_json_text(
-    ): Short
+    ): Int
     external fun uniffi_did_sidekicks_checksum_method_didmethodparameter_get_name(
-    ): Short
+    ): Int
     external fun uniffi_did_sidekicks_checksum_method_didmethodparameter_get_string_array_value(
-    ): Short
+    ): Int
     external fun uniffi_did_sidekicks_checksum_method_didmethodparameter_get_string_value(
-    ): Short
+    ): Int
     external fun uniffi_did_sidekicks_checksum_method_didmethodparameter_get_u64_value(
-    ): Short
+    ): Int
     external fun uniffi_did_sidekicks_checksum_method_didmethodparameter_is_array(
-    ): Short
+    ): Int
     external fun uniffi_did_sidekicks_checksum_method_didmethodparameter_is_bool(
-    ): Short
+    ): Int
     external fun uniffi_did_sidekicks_checksum_method_didmethodparameter_is_empty_array(
-    ): Short
+    ): Int
     external fun uniffi_did_sidekicks_checksum_method_didmethodparameter_is_f64(
-    ): Short
+    ): Int
     external fun uniffi_did_sidekicks_checksum_method_didmethodparameter_is_i64(
-    ): Short
+    ): Int
     external fun uniffi_did_sidekicks_checksum_method_didmethodparameter_is_null(
-    ): Short
+    ): Int
     external fun uniffi_did_sidekicks_checksum_method_didmethodparameter_is_object(
-    ): Short
+    ): Int
     external fun uniffi_did_sidekicks_checksum_method_didmethodparameter_is_string(
-    ): Short
+    ): Int
     external fun uniffi_did_sidekicks_checksum_method_didmethodparameter_is_string_array(
-    ): Short
+    ): Int
     external fun uniffi_did_sidekicks_checksum_method_didmethodparameter_is_u64(
-    ): Short
+    ): Int
     external fun uniffi_did_sidekicks_checksum_method_ed25519signature_to_hex(
-    ): Short
+    ): Int
     external fun uniffi_did_sidekicks_checksum_method_ed25519signature_to_multibase(
-    ): Short
+    ): Int
     external fun uniffi_did_sidekicks_checksum_method_ed25519signingkey_get_verifying_key(
-    ): Short
+    ): Int
     external fun uniffi_did_sidekicks_checksum_method_ed25519signingkey_sign(
-    ): Short
+    ): Int
     external fun uniffi_did_sidekicks_checksum_method_ed25519signingkey_sign_hex(
-    ): Short
+    ): Int
     external fun uniffi_did_sidekicks_checksum_method_ed25519signingkey_to_multibase(
-    ): Short
+    ): Int
     external fun uniffi_did_sidekicks_checksum_method_ed25519signingkey_write_pkcs8_pem_file(
-    ): Short
+    ): Int
     external fun uniffi_did_sidekicks_checksum_method_ed25519verifyingkey_to_multibase(
-    ): Short
+    ): Int
     external fun uniffi_did_sidekicks_checksum_method_ed25519verifyingkey_verify_strict(
-    ): Short
+    ): Int
     external fun uniffi_did_sidekicks_checksum_method_ed25519verifyingkey_verify_strict_from_hex(
-    ): Short
+    ): Int
     external fun uniffi_did_sidekicks_checksum_method_ed25519verifyingkey_write_public_key_pem_file(
-    ): Short
+    ): Int
     external fun uniffi_did_sidekicks_checksum_method_eddsajcs2022cryptosuite_add_proof(
-    ): Short
+    ): Int
     external fun uniffi_did_sidekicks_checksum_method_eddsajcs2022cryptosuite_verify_proof(
-    ): Short
+    ): Int
     external fun uniffi_did_sidekicks_checksum_method_jcssha256hasher_base58btc_encode_multihash(
-    ): Short
+    ): Int
     external fun uniffi_did_sidekicks_checksum_method_jcssha256hasher_encode_hex(
-    ): Short
+    ): Int
     external fun uniffi_did_sidekicks_checksum_constructor_cryptosuiteproofoptions_build(
-    ): Short
+    ): Int
     external fun uniffi_did_sidekicks_checksum_constructor_cryptosuiteproofoptions_new_eddsa_jcs_2022(
-    ): Short
+    ): Int
     external fun uniffi_did_sidekicks_checksum_constructor_dataintegrityproof_from_json_string(
-    ): Short
+    ): Int
     external fun uniffi_did_sidekicks_checksum_constructor_diddoc_from_json(
-    ): Short
+    ): Int
     external fun uniffi_did_sidekicks_checksum_constructor_didlogentryvalidator_from(
-    ): Short
+    ): Int
     external fun uniffi_did_sidekicks_checksum_constructor_ed25519signature_from_hex(
-    ): Short
+    ): Int
     external fun uniffi_did_sidekicks_checksum_constructor_ed25519signature_from_multibase(
-    ): Short
+    ): Int
     external fun uniffi_did_sidekicks_checksum_constructor_ed25519signingkey_from_multibase(
-    ): Short
+    ): Int
     external fun uniffi_did_sidekicks_checksum_constructor_ed25519signingkey_from_pkcs8_pem(
-    ): Short
+    ): Int
     external fun uniffi_did_sidekicks_checksum_constructor_ed25519signingkey_generate(
-    ): Short
+    ): Int
     external fun uniffi_did_sidekicks_checksum_constructor_ed25519signingkey_read_pkcs8_pem_file(
-    ): Short
+    ): Int
     external fun uniffi_did_sidekicks_checksum_constructor_ed25519verifyingkey_from_multibase(
-    ): Short
+    ): Int
     external fun uniffi_did_sidekicks_checksum_constructor_ed25519verifyingkey_from_public_key_pem(
-    ): Short
+    ): Int
     external fun uniffi_did_sidekicks_checksum_constructor_ed25519verifyingkey_read_public_key_pem_file(
-    ): Short
+    ): Int
     external fun uniffi_did_sidekicks_checksum_constructor_eddsajcs2022cryptosuite_from_signing_key(
-    ): Short
+    ): Int
     external fun uniffi_did_sidekicks_checksum_constructor_eddsajcs2022cryptosuite_from_verifying_key(
-    ): Short
+    ): Int
     external fun uniffi_did_sidekicks_checksum_constructor_jcssha256hasher_build(
-    ): Short
+    ): Int
     external fun ffi_did_sidekicks_uniffi_contract_version(
     ): Int
 
@@ -1015,7 +1015,7 @@ external fun ffi_did_sidekicks_rust_future_cancel_u8(`handle`: Long,
 external fun ffi_did_sidekicks_rust_future_free_u8(`handle`: Long,
 ): Unit
 external fun ffi_did_sidekicks_rust_future_complete_u8(`handle`: Long,uniffi_out_err: UniffiRustCallStatus, 
-): Byte
+): Int
 external fun ffi_did_sidekicks_rust_future_poll_i8(`handle`: Long,`callback`: UniffiRustFutureContinuationCallback,`callbackData`: Long,
 ): Unit
 external fun ffi_did_sidekicks_rust_future_cancel_i8(`handle`: Long,
@@ -1031,7 +1031,7 @@ external fun ffi_did_sidekicks_rust_future_cancel_u16(`handle`: Long,
 external fun ffi_did_sidekicks_rust_future_free_u16(`handle`: Long,
 ): Unit
 external fun ffi_did_sidekicks_rust_future_complete_u16(`handle`: Long,uniffi_out_err: UniffiRustCallStatus, 
-): Short
+): Int
 external fun ffi_did_sidekicks_rust_future_poll_i16(`handle`: Long,`callback`: UniffiRustFutureContinuationCallback,`callbackData`: Long,
 ): Unit
 external fun ffi_did_sidekicks_rust_future_cancel_i16(`handle`: Long,
@@ -1119,211 +1119,211 @@ private fun uniffiCheckContractApiVersion(lib: IntegrityCheckingUniffiLib) {
 }
 @Suppress("UNUSED_PARAMETER")
 private fun uniffiCheckApiChecksums(lib: IntegrityCheckingUniffiLib) {
-    if (lib.uniffi_did_sidekicks_checksum_func_get_key_from_did_doc() != 6953.toShort()) {
+    if (lib.uniffi_did_sidekicks_checksum_func_get_key_from_did_doc() != 6953) {
         throw RuntimeException("UniFFI API checksum mismatch: try cleaning and rebuilding your project")
     }
-    if (lib.uniffi_did_sidekicks_checksum_method_diddoc_get_assertion_method() != 37191.toShort()) {
+    if (lib.uniffi_did_sidekicks_checksum_method_diddoc_get_assertion_method() != 37191) {
         throw RuntimeException("UniFFI API checksum mismatch: try cleaning and rebuilding your project")
     }
-    if (lib.uniffi_did_sidekicks_checksum_method_diddoc_get_authentication() != 55028.toShort()) {
+    if (lib.uniffi_did_sidekicks_checksum_method_diddoc_get_authentication() != 55028) {
         throw RuntimeException("UniFFI API checksum mismatch: try cleaning and rebuilding your project")
     }
-    if (lib.uniffi_did_sidekicks_checksum_method_diddoc_get_capability_delegation() != 6044.toShort()) {
+    if (lib.uniffi_did_sidekicks_checksum_method_diddoc_get_capability_delegation() != 6044) {
         throw RuntimeException("UniFFI API checksum mismatch: try cleaning and rebuilding your project")
     }
-    if (lib.uniffi_did_sidekicks_checksum_method_diddoc_get_capability_invocation() != 61251.toShort()) {
+    if (lib.uniffi_did_sidekicks_checksum_method_diddoc_get_capability_invocation() != 61251) {
         throw RuntimeException("UniFFI API checksum mismatch: try cleaning and rebuilding your project")
     }
-    if (lib.uniffi_did_sidekicks_checksum_method_diddoc_get_context() != 41159.toShort()) {
+    if (lib.uniffi_did_sidekicks_checksum_method_diddoc_get_context() != 41159) {
         throw RuntimeException("UniFFI API checksum mismatch: try cleaning and rebuilding your project")
     }
-    if (lib.uniffi_did_sidekicks_checksum_method_diddoc_get_controller() != 47496.toShort()) {
+    if (lib.uniffi_did_sidekicks_checksum_method_diddoc_get_controller() != 47496) {
         throw RuntimeException("UniFFI API checksum mismatch: try cleaning and rebuilding your project")
     }
-    if (lib.uniffi_did_sidekicks_checksum_method_diddoc_get_deactivated() != 51038.toShort()) {
+    if (lib.uniffi_did_sidekicks_checksum_method_diddoc_get_deactivated() != 51038) {
         throw RuntimeException("UniFFI API checksum mismatch: try cleaning and rebuilding your project")
     }
-    if (lib.uniffi_did_sidekicks_checksum_method_diddoc_get_id() != 15300.toShort()) {
+    if (lib.uniffi_did_sidekicks_checksum_method_diddoc_get_id() != 15300) {
         throw RuntimeException("UniFFI API checksum mismatch: try cleaning and rebuilding your project")
     }
-    if (lib.uniffi_did_sidekicks_checksum_method_diddoc_get_key() != 3957.toShort()) {
+    if (lib.uniffi_did_sidekicks_checksum_method_diddoc_get_key() != 3957) {
         throw RuntimeException("UniFFI API checksum mismatch: try cleaning and rebuilding your project")
     }
-    if (lib.uniffi_did_sidekicks_checksum_method_diddoc_get_key_by_fragment() != 56152.toShort()) {
+    if (lib.uniffi_did_sidekicks_checksum_method_diddoc_get_key_by_fragment() != 56152) {
         throw RuntimeException("UniFFI API checksum mismatch: try cleaning and rebuilding your project")
     }
-    if (lib.uniffi_did_sidekicks_checksum_method_diddoc_get_key_by_method_id() != 58619.toShort()) {
+    if (lib.uniffi_did_sidekicks_checksum_method_diddoc_get_key_by_method_id() != 58619) {
         throw RuntimeException("UniFFI API checksum mismatch: try cleaning and rebuilding your project")
     }
-    if (lib.uniffi_did_sidekicks_checksum_method_diddoc_get_profile_version() != 51378.toShort()) {
+    if (lib.uniffi_did_sidekicks_checksum_method_diddoc_get_profile_version() != 51378) {
         throw RuntimeException("UniFFI API checksum mismatch: try cleaning and rebuilding your project")
     }
-    if (lib.uniffi_did_sidekicks_checksum_method_diddoc_get_verification_method() != 57161.toShort()) {
+    if (lib.uniffi_did_sidekicks_checksum_method_diddoc_get_verification_method() != 57161) {
         throw RuntimeException("UniFFI API checksum mismatch: try cleaning and rebuilding your project")
     }
-    if (lib.uniffi_did_sidekicks_checksum_method_diddoc_to_json() != 11627.toShort()) {
+    if (lib.uniffi_did_sidekicks_checksum_method_diddoc_to_json() != 11627) {
         throw RuntimeException("UniFFI API checksum mismatch: try cleaning and rebuilding your project")
     }
-    if (lib.uniffi_did_sidekicks_checksum_method_diddocextended_get_did_doc() != 34983.toShort()) {
+    if (lib.uniffi_did_sidekicks_checksum_method_diddocextended_get_did_doc() != 34983) {
         throw RuntimeException("UniFFI API checksum mismatch: try cleaning and rebuilding your project")
     }
-    if (lib.uniffi_did_sidekicks_checksum_method_diddocextended_get_did_method_parameters() != 19911.toShort()) {
+    if (lib.uniffi_did_sidekicks_checksum_method_diddocextended_get_did_method_parameters() != 19911) {
         throw RuntimeException("UniFFI API checksum mismatch: try cleaning and rebuilding your project")
     }
-    if (lib.uniffi_did_sidekicks_checksum_method_didlogentryjsonschema_get_json_schema() != 46254.toShort()) {
+    if (lib.uniffi_did_sidekicks_checksum_method_didlogentryjsonschema_get_json_schema() != 46254) {
         throw RuntimeException("UniFFI API checksum mismatch: try cleaning and rebuilding your project")
     }
-    if (lib.uniffi_did_sidekicks_checksum_method_didlogentryvalidator_validate() != 36939.toShort()) {
+    if (lib.uniffi_did_sidekicks_checksum_method_didlogentryvalidator_validate() != 36939) {
         throw RuntimeException("UniFFI API checksum mismatch: try cleaning and rebuilding your project")
     }
-    if (lib.uniffi_did_sidekicks_checksum_method_didmethodparameter_get_bool_value() != 27336.toShort()) {
+    if (lib.uniffi_did_sidekicks_checksum_method_didmethodparameter_get_bool_value() != 27336) {
         throw RuntimeException("UniFFI API checksum mismatch: try cleaning and rebuilding your project")
     }
-    if (lib.uniffi_did_sidekicks_checksum_method_didmethodparameter_get_f64_value() != 26088.toShort()) {
+    if (lib.uniffi_did_sidekicks_checksum_method_didmethodparameter_get_f64_value() != 26088) {
         throw RuntimeException("UniFFI API checksum mismatch: try cleaning and rebuilding your project")
     }
-    if (lib.uniffi_did_sidekicks_checksum_method_didmethodparameter_get_i64_value() != 61208.toShort()) {
+    if (lib.uniffi_did_sidekicks_checksum_method_didmethodparameter_get_i64_value() != 61208) {
         throw RuntimeException("UniFFI API checksum mismatch: try cleaning and rebuilding your project")
     }
-    if (lib.uniffi_did_sidekicks_checksum_method_didmethodparameter_get_json_text() != 9466.toShort()) {
+    if (lib.uniffi_did_sidekicks_checksum_method_didmethodparameter_get_json_text() != 9466) {
         throw RuntimeException("UniFFI API checksum mismatch: try cleaning and rebuilding your project")
     }
-    if (lib.uniffi_did_sidekicks_checksum_method_didmethodparameter_get_name() != 15801.toShort()) {
+    if (lib.uniffi_did_sidekicks_checksum_method_didmethodparameter_get_name() != 15801) {
         throw RuntimeException("UniFFI API checksum mismatch: try cleaning and rebuilding your project")
     }
-    if (lib.uniffi_did_sidekicks_checksum_method_didmethodparameter_get_string_array_value() != 32815.toShort()) {
+    if (lib.uniffi_did_sidekicks_checksum_method_didmethodparameter_get_string_array_value() != 32815) {
         throw RuntimeException("UniFFI API checksum mismatch: try cleaning and rebuilding your project")
     }
-    if (lib.uniffi_did_sidekicks_checksum_method_didmethodparameter_get_string_value() != 39370.toShort()) {
+    if (lib.uniffi_did_sidekicks_checksum_method_didmethodparameter_get_string_value() != 39370) {
         throw RuntimeException("UniFFI API checksum mismatch: try cleaning and rebuilding your project")
     }
-    if (lib.uniffi_did_sidekicks_checksum_method_didmethodparameter_get_u64_value() != 50082.toShort()) {
+    if (lib.uniffi_did_sidekicks_checksum_method_didmethodparameter_get_u64_value() != 50082) {
         throw RuntimeException("UniFFI API checksum mismatch: try cleaning and rebuilding your project")
     }
-    if (lib.uniffi_did_sidekicks_checksum_method_didmethodparameter_is_array() != 58978.toShort()) {
+    if (lib.uniffi_did_sidekicks_checksum_method_didmethodparameter_is_array() != 58978) {
         throw RuntimeException("UniFFI API checksum mismatch: try cleaning and rebuilding your project")
     }
-    if (lib.uniffi_did_sidekicks_checksum_method_didmethodparameter_is_bool() != 28859.toShort()) {
+    if (lib.uniffi_did_sidekicks_checksum_method_didmethodparameter_is_bool() != 28859) {
         throw RuntimeException("UniFFI API checksum mismatch: try cleaning and rebuilding your project")
     }
-    if (lib.uniffi_did_sidekicks_checksum_method_didmethodparameter_is_empty_array() != 16312.toShort()) {
+    if (lib.uniffi_did_sidekicks_checksum_method_didmethodparameter_is_empty_array() != 16312) {
         throw RuntimeException("UniFFI API checksum mismatch: try cleaning and rebuilding your project")
     }
-    if (lib.uniffi_did_sidekicks_checksum_method_didmethodparameter_is_f64() != 15255.toShort()) {
+    if (lib.uniffi_did_sidekicks_checksum_method_didmethodparameter_is_f64() != 15255) {
         throw RuntimeException("UniFFI API checksum mismatch: try cleaning and rebuilding your project")
     }
-    if (lib.uniffi_did_sidekicks_checksum_method_didmethodparameter_is_i64() != 40923.toShort()) {
+    if (lib.uniffi_did_sidekicks_checksum_method_didmethodparameter_is_i64() != 40923) {
         throw RuntimeException("UniFFI API checksum mismatch: try cleaning and rebuilding your project")
     }
-    if (lib.uniffi_did_sidekicks_checksum_method_didmethodparameter_is_null() != 2529.toShort()) {
+    if (lib.uniffi_did_sidekicks_checksum_method_didmethodparameter_is_null() != 2529) {
         throw RuntimeException("UniFFI API checksum mismatch: try cleaning and rebuilding your project")
     }
-    if (lib.uniffi_did_sidekicks_checksum_method_didmethodparameter_is_object() != 53543.toShort()) {
+    if (lib.uniffi_did_sidekicks_checksum_method_didmethodparameter_is_object() != 53543) {
         throw RuntimeException("UniFFI API checksum mismatch: try cleaning and rebuilding your project")
     }
-    if (lib.uniffi_did_sidekicks_checksum_method_didmethodparameter_is_string() != 24437.toShort()) {
+    if (lib.uniffi_did_sidekicks_checksum_method_didmethodparameter_is_string() != 24437) {
         throw RuntimeException("UniFFI API checksum mismatch: try cleaning and rebuilding your project")
     }
-    if (lib.uniffi_did_sidekicks_checksum_method_didmethodparameter_is_string_array() != 33516.toShort()) {
+    if (lib.uniffi_did_sidekicks_checksum_method_didmethodparameter_is_string_array() != 33516) {
         throw RuntimeException("UniFFI API checksum mismatch: try cleaning and rebuilding your project")
     }
-    if (lib.uniffi_did_sidekicks_checksum_method_didmethodparameter_is_u64() != 46179.toShort()) {
+    if (lib.uniffi_did_sidekicks_checksum_method_didmethodparameter_is_u64() != 46179) {
         throw RuntimeException("UniFFI API checksum mismatch: try cleaning and rebuilding your project")
     }
-    if (lib.uniffi_did_sidekicks_checksum_method_ed25519signature_to_hex() != 57229.toShort()) {
+    if (lib.uniffi_did_sidekicks_checksum_method_ed25519signature_to_hex() != 57229) {
         throw RuntimeException("UniFFI API checksum mismatch: try cleaning and rebuilding your project")
     }
-    if (lib.uniffi_did_sidekicks_checksum_method_ed25519signature_to_multibase() != 48986.toShort()) {
+    if (lib.uniffi_did_sidekicks_checksum_method_ed25519signature_to_multibase() != 48986) {
         throw RuntimeException("UniFFI API checksum mismatch: try cleaning and rebuilding your project")
     }
-    if (lib.uniffi_did_sidekicks_checksum_method_ed25519signingkey_get_verifying_key() != 57053.toShort()) {
+    if (lib.uniffi_did_sidekicks_checksum_method_ed25519signingkey_get_verifying_key() != 57053) {
         throw RuntimeException("UniFFI API checksum mismatch: try cleaning and rebuilding your project")
     }
-    if (lib.uniffi_did_sidekicks_checksum_method_ed25519signingkey_sign() != 50415.toShort()) {
+    if (lib.uniffi_did_sidekicks_checksum_method_ed25519signingkey_sign() != 50415) {
         throw RuntimeException("UniFFI API checksum mismatch: try cleaning and rebuilding your project")
     }
-    if (lib.uniffi_did_sidekicks_checksum_method_ed25519signingkey_sign_hex() != 38120.toShort()) {
+    if (lib.uniffi_did_sidekicks_checksum_method_ed25519signingkey_sign_hex() != 38120) {
         throw RuntimeException("UniFFI API checksum mismatch: try cleaning and rebuilding your project")
     }
-    if (lib.uniffi_did_sidekicks_checksum_method_ed25519signingkey_to_multibase() != 29113.toShort()) {
+    if (lib.uniffi_did_sidekicks_checksum_method_ed25519signingkey_to_multibase() != 29113) {
         throw RuntimeException("UniFFI API checksum mismatch: try cleaning and rebuilding your project")
     }
-    if (lib.uniffi_did_sidekicks_checksum_method_ed25519signingkey_write_pkcs8_pem_file() != 26802.toShort()) {
+    if (lib.uniffi_did_sidekicks_checksum_method_ed25519signingkey_write_pkcs8_pem_file() != 26802) {
         throw RuntimeException("UniFFI API checksum mismatch: try cleaning and rebuilding your project")
     }
-    if (lib.uniffi_did_sidekicks_checksum_method_ed25519verifyingkey_to_multibase() != 6485.toShort()) {
+    if (lib.uniffi_did_sidekicks_checksum_method_ed25519verifyingkey_to_multibase() != 6485) {
         throw RuntimeException("UniFFI API checksum mismatch: try cleaning and rebuilding your project")
     }
-    if (lib.uniffi_did_sidekicks_checksum_method_ed25519verifyingkey_verify_strict() != 32628.toShort()) {
+    if (lib.uniffi_did_sidekicks_checksum_method_ed25519verifyingkey_verify_strict() != 32628) {
         throw RuntimeException("UniFFI API checksum mismatch: try cleaning and rebuilding your project")
     }
-    if (lib.uniffi_did_sidekicks_checksum_method_ed25519verifyingkey_verify_strict_from_hex() != 55397.toShort()) {
+    if (lib.uniffi_did_sidekicks_checksum_method_ed25519verifyingkey_verify_strict_from_hex() != 55397) {
         throw RuntimeException("UniFFI API checksum mismatch: try cleaning and rebuilding your project")
     }
-    if (lib.uniffi_did_sidekicks_checksum_method_ed25519verifyingkey_write_public_key_pem_file() != 39293.toShort()) {
+    if (lib.uniffi_did_sidekicks_checksum_method_ed25519verifyingkey_write_public_key_pem_file() != 39293) {
         throw RuntimeException("UniFFI API checksum mismatch: try cleaning and rebuilding your project")
     }
-    if (lib.uniffi_did_sidekicks_checksum_method_eddsajcs2022cryptosuite_add_proof() != 35568.toShort()) {
+    if (lib.uniffi_did_sidekicks_checksum_method_eddsajcs2022cryptosuite_add_proof() != 35568) {
         throw RuntimeException("UniFFI API checksum mismatch: try cleaning and rebuilding your project")
     }
-    if (lib.uniffi_did_sidekicks_checksum_method_eddsajcs2022cryptosuite_verify_proof() != 15210.toShort()) {
+    if (lib.uniffi_did_sidekicks_checksum_method_eddsajcs2022cryptosuite_verify_proof() != 15210) {
         throw RuntimeException("UniFFI API checksum mismatch: try cleaning and rebuilding your project")
     }
-    if (lib.uniffi_did_sidekicks_checksum_method_jcssha256hasher_base58btc_encode_multihash() != 20039.toShort()) {
+    if (lib.uniffi_did_sidekicks_checksum_method_jcssha256hasher_base58btc_encode_multihash() != 20039) {
         throw RuntimeException("UniFFI API checksum mismatch: try cleaning and rebuilding your project")
     }
-    if (lib.uniffi_did_sidekicks_checksum_method_jcssha256hasher_encode_hex() != 53677.toShort()) {
+    if (lib.uniffi_did_sidekicks_checksum_method_jcssha256hasher_encode_hex() != 53677) {
         throw RuntimeException("UniFFI API checksum mismatch: try cleaning and rebuilding your project")
     }
-    if (lib.uniffi_did_sidekicks_checksum_constructor_cryptosuiteproofoptions_build() != 60667.toShort()) {
+    if (lib.uniffi_did_sidekicks_checksum_constructor_cryptosuiteproofoptions_build() != 60667) {
         throw RuntimeException("UniFFI API checksum mismatch: try cleaning and rebuilding your project")
     }
-    if (lib.uniffi_did_sidekicks_checksum_constructor_cryptosuiteproofoptions_new_eddsa_jcs_2022() != 15190.toShort()) {
+    if (lib.uniffi_did_sidekicks_checksum_constructor_cryptosuiteproofoptions_new_eddsa_jcs_2022() != 15190) {
         throw RuntimeException("UniFFI API checksum mismatch: try cleaning and rebuilding your project")
     }
-    if (lib.uniffi_did_sidekicks_checksum_constructor_dataintegrityproof_from_json_string() != 18631.toShort()) {
+    if (lib.uniffi_did_sidekicks_checksum_constructor_dataintegrityproof_from_json_string() != 18631) {
         throw RuntimeException("UniFFI API checksum mismatch: try cleaning and rebuilding your project")
     }
-    if (lib.uniffi_did_sidekicks_checksum_constructor_diddoc_from_json() != 34742.toShort()) {
+    if (lib.uniffi_did_sidekicks_checksum_constructor_diddoc_from_json() != 34742) {
         throw RuntimeException("UniFFI API checksum mismatch: try cleaning and rebuilding your project")
     }
-    if (lib.uniffi_did_sidekicks_checksum_constructor_didlogentryvalidator_from() != 35475.toShort()) {
+    if (lib.uniffi_did_sidekicks_checksum_constructor_didlogentryvalidator_from() != 35475) {
         throw RuntimeException("UniFFI API checksum mismatch: try cleaning and rebuilding your project")
     }
-    if (lib.uniffi_did_sidekicks_checksum_constructor_ed25519signature_from_hex() != 54324.toShort()) {
+    if (lib.uniffi_did_sidekicks_checksum_constructor_ed25519signature_from_hex() != 54324) {
         throw RuntimeException("UniFFI API checksum mismatch: try cleaning and rebuilding your project")
     }
-    if (lib.uniffi_did_sidekicks_checksum_constructor_ed25519signature_from_multibase() != 13030.toShort()) {
+    if (lib.uniffi_did_sidekicks_checksum_constructor_ed25519signature_from_multibase() != 13030) {
         throw RuntimeException("UniFFI API checksum mismatch: try cleaning and rebuilding your project")
     }
-    if (lib.uniffi_did_sidekicks_checksum_constructor_ed25519signingkey_from_multibase() != 27823.toShort()) {
+    if (lib.uniffi_did_sidekicks_checksum_constructor_ed25519signingkey_from_multibase() != 27823) {
         throw RuntimeException("UniFFI API checksum mismatch: try cleaning and rebuilding your project")
     }
-    if (lib.uniffi_did_sidekicks_checksum_constructor_ed25519signingkey_from_pkcs8_pem() != 48757.toShort()) {
+    if (lib.uniffi_did_sidekicks_checksum_constructor_ed25519signingkey_from_pkcs8_pem() != 48757) {
         throw RuntimeException("UniFFI API checksum mismatch: try cleaning and rebuilding your project")
     }
-    if (lib.uniffi_did_sidekicks_checksum_constructor_ed25519signingkey_generate() != 14367.toShort()) {
+    if (lib.uniffi_did_sidekicks_checksum_constructor_ed25519signingkey_generate() != 14367) {
         throw RuntimeException("UniFFI API checksum mismatch: try cleaning and rebuilding your project")
     }
-    if (lib.uniffi_did_sidekicks_checksum_constructor_ed25519signingkey_read_pkcs8_pem_file() != 24363.toShort()) {
+    if (lib.uniffi_did_sidekicks_checksum_constructor_ed25519signingkey_read_pkcs8_pem_file() != 24363) {
         throw RuntimeException("UniFFI API checksum mismatch: try cleaning and rebuilding your project")
     }
-    if (lib.uniffi_did_sidekicks_checksum_constructor_ed25519verifyingkey_from_multibase() != 37951.toShort()) {
+    if (lib.uniffi_did_sidekicks_checksum_constructor_ed25519verifyingkey_from_multibase() != 37951) {
         throw RuntimeException("UniFFI API checksum mismatch: try cleaning and rebuilding your project")
     }
-    if (lib.uniffi_did_sidekicks_checksum_constructor_ed25519verifyingkey_from_public_key_pem() != 64657.toShort()) {
+    if (lib.uniffi_did_sidekicks_checksum_constructor_ed25519verifyingkey_from_public_key_pem() != 64657) {
         throw RuntimeException("UniFFI API checksum mismatch: try cleaning and rebuilding your project")
     }
-    if (lib.uniffi_did_sidekicks_checksum_constructor_ed25519verifyingkey_read_public_key_pem_file() != 17361.toShort()) {
+    if (lib.uniffi_did_sidekicks_checksum_constructor_ed25519verifyingkey_read_public_key_pem_file() != 17361) {
         throw RuntimeException("UniFFI API checksum mismatch: try cleaning and rebuilding your project")
     }
-    if (lib.uniffi_did_sidekicks_checksum_constructor_eddsajcs2022cryptosuite_from_signing_key() != 38121.toShort()) {
+    if (lib.uniffi_did_sidekicks_checksum_constructor_eddsajcs2022cryptosuite_from_signing_key() != 38121) {
         throw RuntimeException("UniFFI API checksum mismatch: try cleaning and rebuilding your project")
     }
-    if (lib.uniffi_did_sidekicks_checksum_constructor_eddsajcs2022cryptosuite_from_verifying_key() != 46860.toShort()) {
+    if (lib.uniffi_did_sidekicks_checksum_constructor_eddsajcs2022cryptosuite_from_verifying_key() != 46860) {
         throw RuntimeException("UniFFI API checksum mismatch: try cleaning and rebuilding your project")
     }
-    if (lib.uniffi_did_sidekicks_checksum_constructor_jcssha256hasher_build() != 3669.toShort()) {
+    if (lib.uniffi_did_sidekicks_checksum_constructor_jcssha256hasher_build() != 3669) {
         throw RuntimeException("UniFFI API checksum mismatch: try cleaning and rebuilding your project")
     }
 }
@@ -5909,6 +5909,8 @@ data class Jwk (
     var `x`: kotlin.String?
     , 
     var `y`: kotlin.String?
+    , 
+    var `pubKey`: kotlin.String?
     
 ){
     
@@ -5931,6 +5933,7 @@ public object FfiConverterTypeJwk: FfiConverterRustBuffer<Jwk> {
             FfiConverterOptionalString.read(buf),
             FfiConverterOptionalString.read(buf),
             FfiConverterOptionalString.read(buf),
+            FfiConverterOptionalString.read(buf),
         )
     }
 
@@ -5940,7 +5943,8 @@ public object FfiConverterTypeJwk: FfiConverterRustBuffer<Jwk> {
             FfiConverterOptionalString.allocationSize(value.`kty`) +
             FfiConverterOptionalString.allocationSize(value.`crv`) +
             FfiConverterOptionalString.allocationSize(value.`x`) +
-            FfiConverterOptionalString.allocationSize(value.`y`)
+            FfiConverterOptionalString.allocationSize(value.`y`) +
+            FfiConverterOptionalString.allocationSize(value.`pubKey`)
     )
 
     override fun write(value: Jwk, buf: ByteBuffer) {
@@ -5950,6 +5954,7 @@ public object FfiConverterTypeJwk: FfiConverterRustBuffer<Jwk> {
             FfiConverterOptionalString.write(value.`crv`, buf)
             FfiConverterOptionalString.write(value.`x`, buf)
             FfiConverterOptionalString.write(value.`y`, buf)
+            FfiConverterOptionalString.write(value.`pubKey`, buf)
     }
 }
 
