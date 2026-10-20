@@ -660,6 +660,12 @@ internal object IntegrityCheckingUniffiLib {
     }
     external fun uniffi_did_sidekicks_checksum_func_get_key_from_did_doc(
     ): Int
+    external fun uniffi_did_sidekicks_checksum_method_compositesigningkey_get_verifying_key(
+    ): Int
+    external fun uniffi_did_sidekicks_checksum_method_compositesigningkey_to_multibase(
+    ): Int
+    external fun uniffi_did_sidekicks_checksum_method_compositeverifyingkey_to_multibase(
+    ): Int
     external fun uniffi_did_sidekicks_checksum_method_diddoc_get_assertion_method(
     ): Int
     external fun uniffi_did_sidekicks_checksum_method_diddoc_get_authentication(
@@ -762,9 +768,21 @@ internal object IntegrityCheckingUniffiLib {
     ): Int
     external fun uniffi_did_sidekicks_checksum_method_jcssha256hasher_encode_hex(
     ): Int
+    external fun uniffi_did_sidekicks_checksum_method_mldsa65ed25519jcspqeidcryptosuite_add_proof(
+    ): Int
+    external fun uniffi_did_sidekicks_checksum_method_mldsa65ed25519jcspqeidcryptosuite_verify_proof(
+    ): Int
+    external fun uniffi_did_sidekicks_checksum_constructor_compositesigningkey_from_multibase(
+    ): Int
+    external fun uniffi_did_sidekicks_checksum_constructor_compositesigningkey_generate(
+    ): Int
+    external fun uniffi_did_sidekicks_checksum_constructor_compositeverifyingkey_from_multibase(
+    ): Int
     external fun uniffi_did_sidekicks_checksum_constructor_cryptosuiteproofoptions_build(
     ): Int
     external fun uniffi_did_sidekicks_checksum_constructor_cryptosuiteproofoptions_new_eddsa_jcs_2022(
+    ): Int
+    external fun uniffi_did_sidekicks_checksum_constructor_cryptosuiteproofoptions_new_mldsa65_ed25519_jcs_pqeid(
     ): Int
     external fun uniffi_did_sidekicks_checksum_constructor_dataintegrityproof_from_json_string(
     ): Int
@@ -796,6 +814,10 @@ internal object IntegrityCheckingUniffiLib {
     ): Int
     external fun uniffi_did_sidekicks_checksum_constructor_jcssha256hasher_build(
     ): Int
+    external fun uniffi_did_sidekicks_checksum_constructor_mldsa65ed25519jcspqeidcryptosuite_from_signing_key(
+    ): Int
+    external fun uniffi_did_sidekicks_checksum_constructor_mldsa65ed25519jcspqeidcryptosuite_from_verifying_key(
+    ): Int
     external fun ffi_did_sidekicks_uniffi_contract_version(
     ): Int
 
@@ -814,13 +836,35 @@ internal object UniffiLib {
         Native.register(UniffiLib::class.java, findLibraryName(componentName = "did_sidekicks"))
         
     }
-    external fun uniffi_did_sidekicks_fn_clone_cryptosuiteproofoptions(`handle`: Long,uniffi_out_err: UniffiRustCallStatus, 
+    external fun uniffi_did_sidekicks_fn_clone_compositesigningkey(`handle`: Long,uniffi_out_err: UniffiRustCallStatus, 
+): Long
+external fun uniffi_did_sidekicks_fn_free_compositesigningkey(`handle`: Long,uniffi_out_err: UniffiRustCallStatus, 
+): Unit
+external fun uniffi_did_sidekicks_fn_constructor_compositesigningkey_from_multibase(`multibase`: RustBuffer.ByValue,uniffi_out_err: UniffiRustCallStatus, 
+): Long
+external fun uniffi_did_sidekicks_fn_constructor_compositesigningkey_generate(uniffi_out_err: UniffiRustCallStatus, 
+): Long
+external fun uniffi_did_sidekicks_fn_method_compositesigningkey_get_verifying_key(`ptr`: Long,uniffi_out_err: UniffiRustCallStatus, 
+): Long
+external fun uniffi_did_sidekicks_fn_method_compositesigningkey_to_multibase(`ptr`: Long,uniffi_out_err: UniffiRustCallStatus, 
+): RustBuffer.ByValue
+external fun uniffi_did_sidekicks_fn_clone_compositeverifyingkey(`handle`: Long,uniffi_out_err: UniffiRustCallStatus, 
+): Long
+external fun uniffi_did_sidekicks_fn_free_compositeverifyingkey(`handle`: Long,uniffi_out_err: UniffiRustCallStatus, 
+): Unit
+external fun uniffi_did_sidekicks_fn_constructor_compositeverifyingkey_from_multibase(`multibase`: RustBuffer.ByValue,uniffi_out_err: UniffiRustCallStatus, 
+): Long
+external fun uniffi_did_sidekicks_fn_method_compositeverifyingkey_to_multibase(`ptr`: Long,uniffi_out_err: UniffiRustCallStatus, 
+): RustBuffer.ByValue
+external fun uniffi_did_sidekicks_fn_clone_cryptosuiteproofoptions(`handle`: Long,uniffi_out_err: UniffiRustCallStatus, 
 ): Long
 external fun uniffi_did_sidekicks_fn_free_cryptosuiteproofoptions(`handle`: Long,uniffi_out_err: UniffiRustCallStatus, 
 ): Unit
 external fun uniffi_did_sidekicks_fn_constructor_cryptosuiteproofoptions_build(uniffi_out_err: UniffiRustCallStatus, 
 ): Long
 external fun uniffi_did_sidekicks_fn_constructor_cryptosuiteproofoptions_new_eddsa_jcs_2022(`createdDtRfc3339`: RustBuffer.ByValue,`verificationMethod`: RustBuffer.ByValue,`proofPurpose`: RustBuffer.ByValue,`context`: RustBuffer.ByValue,`challenge`: RustBuffer.ByValue,uniffi_out_err: UniffiRustCallStatus, 
+): Long
+external fun uniffi_did_sidekicks_fn_constructor_cryptosuiteproofoptions_new_mldsa65_ed25519_jcs_pqeid(`createdDtRfc3339`: RustBuffer.ByValue,`verificationMethod`: RustBuffer.ByValue,`proofPurpose`: RustBuffer.ByValue,`context`: RustBuffer.ByValue,`challenge`: RustBuffer.ByValue,uniffi_out_err: UniffiRustCallStatus, 
 ): Long
 external fun uniffi_did_sidekicks_fn_clone_dataintegrityproof(`handle`: Long,uniffi_out_err: UniffiRustCallStatus, 
 ): Long
@@ -998,6 +1042,18 @@ external fun uniffi_did_sidekicks_fn_method_jcssha256hasher_base58btc_encode_mul
 ): RustBuffer.ByValue
 external fun uniffi_did_sidekicks_fn_method_jcssha256hasher_encode_hex(`ptr`: Long,`json`: RustBuffer.ByValue,uniffi_out_err: UniffiRustCallStatus, 
 ): RustBuffer.ByValue
+external fun uniffi_did_sidekicks_fn_clone_mldsa65ed25519jcspqeidcryptosuite(`handle`: Long,uniffi_out_err: UniffiRustCallStatus, 
+): Long
+external fun uniffi_did_sidekicks_fn_free_mldsa65ed25519jcspqeidcryptosuite(`handle`: Long,uniffi_out_err: UniffiRustCallStatus, 
+): Unit
+external fun uniffi_did_sidekicks_fn_constructor_mldsa65ed25519jcspqeidcryptosuite_from_signing_key(`signingKey`: Long,uniffi_out_err: UniffiRustCallStatus, 
+): Long
+external fun uniffi_did_sidekicks_fn_constructor_mldsa65ed25519jcspqeidcryptosuite_from_verifying_key(`verifyingKey`: Long,uniffi_out_err: UniffiRustCallStatus, 
+): Long
+external fun uniffi_did_sidekicks_fn_method_mldsa65ed25519jcspqeidcryptosuite_add_proof(`ptr`: Long,`unsecuredDocument`: RustBuffer.ByValue,`options`: Long,uniffi_out_err: UniffiRustCallStatus, 
+): RustBuffer.ByValue
+external fun uniffi_did_sidekicks_fn_method_mldsa65ed25519jcspqeidcryptosuite_verify_proof(`ptr`: Long,`proof`: Long,`docHash`: RustBuffer.ByValue,uniffi_out_err: UniffiRustCallStatus, 
+): Unit
 external fun uniffi_did_sidekicks_fn_func_get_key_from_did_doc(`didDoc`: RustBuffer.ByValue,`keyId`: RustBuffer.ByValue,uniffi_out_err: UniffiRustCallStatus, 
 ): RustBuffer.ByValue
 external fun ffi_did_sidekicks_rustbuffer_alloc(`size`: Long,uniffi_out_err: UniffiRustCallStatus, 
@@ -1120,6 +1176,15 @@ private fun uniffiCheckContractApiVersion(lib: IntegrityCheckingUniffiLib) {
 @Suppress("UNUSED_PARAMETER")
 private fun uniffiCheckApiChecksums(lib: IntegrityCheckingUniffiLib) {
     if (lib.uniffi_did_sidekicks_checksum_func_get_key_from_did_doc() != 6953) {
+        throw RuntimeException("UniFFI API checksum mismatch: try cleaning and rebuilding your project")
+    }
+    if (lib.uniffi_did_sidekicks_checksum_method_compositesigningkey_get_verifying_key() != 8995) {
+        throw RuntimeException("UniFFI API checksum mismatch: try cleaning and rebuilding your project")
+    }
+    if (lib.uniffi_did_sidekicks_checksum_method_compositesigningkey_to_multibase() != 39637) {
+        throw RuntimeException("UniFFI API checksum mismatch: try cleaning and rebuilding your project")
+    }
+    if (lib.uniffi_did_sidekicks_checksum_method_compositeverifyingkey_to_multibase() != 44812) {
         throw RuntimeException("UniFFI API checksum mismatch: try cleaning and rebuilding your project")
     }
     if (lib.uniffi_did_sidekicks_checksum_method_diddoc_get_assertion_method() != 37191) {
@@ -1275,10 +1340,28 @@ private fun uniffiCheckApiChecksums(lib: IntegrityCheckingUniffiLib) {
     if (lib.uniffi_did_sidekicks_checksum_method_jcssha256hasher_encode_hex() != 53677) {
         throw RuntimeException("UniFFI API checksum mismatch: try cleaning and rebuilding your project")
     }
+    if (lib.uniffi_did_sidekicks_checksum_method_mldsa65ed25519jcspqeidcryptosuite_add_proof() != 31428) {
+        throw RuntimeException("UniFFI API checksum mismatch: try cleaning and rebuilding your project")
+    }
+    if (lib.uniffi_did_sidekicks_checksum_method_mldsa65ed25519jcspqeidcryptosuite_verify_proof() != 61690) {
+        throw RuntimeException("UniFFI API checksum mismatch: try cleaning and rebuilding your project")
+    }
+    if (lib.uniffi_did_sidekicks_checksum_constructor_compositesigningkey_from_multibase() != 10368) {
+        throw RuntimeException("UniFFI API checksum mismatch: try cleaning and rebuilding your project")
+    }
+    if (lib.uniffi_did_sidekicks_checksum_constructor_compositesigningkey_generate() != 13540) {
+        throw RuntimeException("UniFFI API checksum mismatch: try cleaning and rebuilding your project")
+    }
+    if (lib.uniffi_did_sidekicks_checksum_constructor_compositeverifyingkey_from_multibase() != 9408) {
+        throw RuntimeException("UniFFI API checksum mismatch: try cleaning and rebuilding your project")
+    }
     if (lib.uniffi_did_sidekicks_checksum_constructor_cryptosuiteproofoptions_build() != 60667) {
         throw RuntimeException("UniFFI API checksum mismatch: try cleaning and rebuilding your project")
     }
     if (lib.uniffi_did_sidekicks_checksum_constructor_cryptosuiteproofoptions_new_eddsa_jcs_2022() != 15190) {
+        throw RuntimeException("UniFFI API checksum mismatch: try cleaning and rebuilding your project")
+    }
+    if (lib.uniffi_did_sidekicks_checksum_constructor_cryptosuiteproofoptions_new_mldsa65_ed25519_jcs_pqeid() != 40852) {
         throw RuntimeException("UniFFI API checksum mismatch: try cleaning and rebuilding your project")
     }
     if (lib.uniffi_did_sidekicks_checksum_constructor_dataintegrityproof_from_json_string() != 18631) {
@@ -1324,6 +1407,12 @@ private fun uniffiCheckApiChecksums(lib: IntegrityCheckingUniffiLib) {
         throw RuntimeException("UniFFI API checksum mismatch: try cleaning and rebuilding your project")
     }
     if (lib.uniffi_did_sidekicks_checksum_constructor_jcssha256hasher_build() != 3669) {
+        throw RuntimeException("UniFFI API checksum mismatch: try cleaning and rebuilding your project")
+    }
+    if (lib.uniffi_did_sidekicks_checksum_constructor_mldsa65ed25519jcspqeidcryptosuite_from_signing_key() != 48278) {
+        throw RuntimeException("UniFFI API checksum mismatch: try cleaning and rebuilding your project")
+    }
+    if (lib.uniffi_did_sidekicks_checksum_constructor_mldsa65ed25519jcspqeidcryptosuite_from_verifying_key() != 18082) {
         throw RuntimeException("UniFFI API checksum mismatch: try cleaning and rebuilding your project")
     }
 }
@@ -1728,6 +1817,565 @@ public object FfiConverterString: FfiConverter<String, RustBuffer.ByValue> {
 //
 
 
+/**
+ * A `SHA2` (SHA-256) (https://en.wikipedia.org/wiki/SHA-2) hasher with `RFC-8785` (https://datatracker.ietf.org/doc/html/rfc8785) in mind.
+ *
+ * It is capable of hashing any JSON structure w.r.t. `RFC-8785` (JSON Canonicalization Scheme - JCS).
+ */
+public interface CompositeSigningKeyInterface {
+    
+    fun `getVerifyingKey`(): CompositeVerifyingKey
+    
+    fun `toMultibase`(): kotlin.String
+    
+    companion object
+}
+
+/**
+ * A `SHA2` (SHA-256) (https://en.wikipedia.org/wiki/SHA-2) hasher with `RFC-8785` (https://datatracker.ietf.org/doc/html/rfc8785) in mind.
+ *
+ * It is capable of hashing any JSON structure w.r.t. `RFC-8785` (JSON Canonicalization Scheme - JCS).
+ */
+open class CompositeSigningKey: Disposable, AutoCloseable, CompositeSigningKeyInterface
+{
+
+    @Suppress("UNUSED_PARAMETER")
+    /**
+     * @suppress
+     */
+    constructor(withHandle: UniffiWithHandle, handle: Long) {
+        this.handle = handle
+        this.cleanable = UniffiLib.CLEANER.register(this, UniffiCleanAction(handle))
+    }
+
+    /**
+     * @suppress
+     *
+     * This constructor can be used to instantiate a fake object. Only used for tests. Any
+     * attempt to actually use an object constructed this way will fail as there is no
+     * connected Rust object.
+     */
+    @Suppress("UNUSED_PARAMETER")
+    constructor(noHandle: NoHandle) {
+        this.handle = 0
+        this.cleanable = null
+    }
+
+    protected val handle: Long
+    protected val cleanable: UniffiCleaner.Cleanable?
+
+    private val wasDestroyed = AtomicBoolean(false)
+    private val callCounter = AtomicLong(1)
+
+    override fun destroy() {
+        // Only allow a single call to this method.
+        // TODO: maybe we should log a warning if called more than once?
+        if (this.wasDestroyed.compareAndSet(false, true)) {
+            // This decrement always matches the initial count of 1 given at creation time.
+            if (this.callCounter.decrementAndGet() == 0L) {
+                cleanable?.clean()
+            }
+        }
+    }
+
+    @Synchronized
+    override fun close() {
+        this.destroy()
+    }
+
+    internal inline fun <R> callWithHandle(block: (handle: Long) -> R): R {
+        // Check and increment the call counter, to keep the object alive.
+        // This needs a compare-and-set retry loop in case of concurrent updates.
+        do {
+            val c = this.callCounter.get()
+            if (c == 0L) {
+                throw IllegalStateException("${this.javaClass.simpleName} object has already been destroyed")
+            }
+            if (c == Long.MAX_VALUE) {
+                throw IllegalStateException("${this.javaClass.simpleName} call counter would overflow")
+            }
+        } while (! this.callCounter.compareAndSet(c, c + 1L))
+        // Now we can safely do the method call without the handle being freed concurrently.
+        try {
+            return block(this.uniffiCloneHandle())
+        } finally {
+            // This decrement always matches the increment we performed above.
+            if (this.callCounter.decrementAndGet() == 0L) {
+                cleanable?.clean()
+            }
+        }
+    }
+
+    // Use a static inner class instead of a closure so as not to accidentally
+    // capture `this` as part of the cleanable's action.
+    private class UniffiCleanAction(private val handle: Long) : Runnable {
+        override fun run() {
+            if (handle == 0.toLong()) {
+                // Fake object created with `NoHandle`, don't try to free.
+                return;
+            }
+            uniffiRustCall { status ->
+                UniffiLib.uniffi_did_sidekicks_fn_free_compositesigningkey(handle, status)
+            }
+        }
+    }
+
+    /**
+     * @suppress
+     */
+    fun uniffiCloneHandle(): Long {
+        if (handle == 0.toLong()) {
+            throw InternalException("uniffiCloneHandle() called on NoHandle object");
+        }
+        return uniffiRustCall() { status ->
+            UniffiLib.uniffi_did_sidekicks_fn_clone_compositesigningkey(handle, status)
+        }
+    }
+
+    override fun `getVerifyingKey`(): CompositeVerifyingKey {
+            return FfiConverterTypeCompositeVerifyingKey.lift(
+    callWithHandle {
+    uniffiRustCall() { _status ->
+    UniffiLib.uniffi_did_sidekicks_fn_method_compositesigningkey_get_verifying_key(
+        it,
+        _status)
+}
+    }
+    )
+    }
+    
+
+    override fun `toMultibase`(): kotlin.String {
+            return FfiConverterString.lift(
+    callWithHandle {
+    uniffiRustCall() { _status ->
+    UniffiLib.uniffi_did_sidekicks_fn_method_compositesigningkey_to_multibase(
+        it,
+        _status)
+}
+    }
+    )
+    }
+    
+
+    
+
+    
+
+
+    
+    companion object {
+        
+    /**
+     * Secret multibase (private-use multicodec 0x300002). Keep it secret.
+     */
+    @Throws(DidSidekicksException::class) fun `fromMultibase`(`multibase`: kotlin.String): CompositeSigningKey {
+            return FfiConverterTypeCompositeSigningKey.lift(
+    uniffiRustCallWithError(DidSidekicksException) { _status ->
+    UniffiLib.uniffi_did_sidekicks_fn_constructor_compositesigningkey_from_multibase(
+    
+        FfiConverterString.lower(`multibase`),_status)
+}
+    )
+    }
+    
+
+         fun `generate`(): CompositeSigningKey {
+            return FfiConverterTypeCompositeSigningKey.lift(
+    uniffiRustCall() { _status ->
+    UniffiLib.uniffi_did_sidekicks_fn_constructor_compositesigningkey_generate(
+    
+        _status)
+}
+    )
+    }
+    
+
+        
+    }
+    
+}
+
+
+/**
+ * @suppress
+ */
+public object FfiConverterTypeCompositeSigningKey: FfiConverter<CompositeSigningKey, Long> {
+    override fun lower(value: CompositeSigningKey): Long {
+        return value.uniffiCloneHandle()
+    }
+
+    override fun lift(value: Long): CompositeSigningKey {
+        return CompositeSigningKey(UniffiWithHandle, value)
+    }
+
+    override fun read(buf: ByteBuffer): CompositeSigningKey {
+        return lift(buf.getLong())
+    }
+
+    override fun allocationSize(value: CompositeSigningKey) = 8UL
+
+    override fun write(value: CompositeSigningKey, buf: ByteBuffer) {
+        buf.putLong(lower(value))
+    }
+}
+
+
+// This template implements a class for working with a Rust struct via a handle
+// to the live Rust struct on the other side of the FFI.
+//
+// There's some subtlety here, because we have to be careful not to operate on a Rust
+// struct after it has been dropped, and because we must expose a public API for freeing
+// theq Kotlin wrapper object in lieu of reliable finalizers. The core requirements are:
+//
+//   * Each instance holds an opaque handle to the underlying Rust struct.
+//     Method calls need to read this handle from the object's state and pass it in to
+//     the Rust FFI.
+//
+//   * When an instance is no longer needed, its handle should be passed to a
+//     special destructor function provided by the Rust FFI, which will drop the
+//     underlying Rust struct.
+//
+//   * Given an instance, calling code is expected to call the special
+//     `destroy` method in order to free it after use, either by calling it explicitly
+//     or by using a higher-level helper like the `use` method. Failing to do so risks
+//     leaking the underlying Rust struct.
+//
+//   * We can't assume that calling code will do the right thing, and must be prepared
+//     to handle Kotlin method calls executing concurrently with or even after a call to
+//     `destroy`, and to handle multiple (possibly concurrent!) calls to `destroy`.
+//
+//   * We must never allow Rust code to operate on the underlying Rust struct after
+//     the destructor has been called, and must never call the destructor more than once.
+//     Doing so may trigger memory unsafety.
+//
+//   * To mitigate many of the risks of leaking memory and use-after-free unsafety, a `Cleaner`
+//     is implemented to call the destructor when the Kotlin object becomes unreachable.
+//     This is done in a background thread. This is not a panacea, and client code should be aware that
+//      1. the thread may starve if some there are objects that have poorly performing
+//     `drop` methods or do significant work in their `drop` methods.
+//      2. the thread is shared across the whole library. This can be tuned by using `android_cleaner = true`,
+//         or `android = true` in the [`kotlin` section of the `uniffi.toml` file](https://mozilla.github.io/uniffi-rs/kotlin/configuration.html).
+//
+// If we try to implement this with mutual exclusion on access to the handle, there is the
+// possibility of a race between a method call and a concurrent call to `destroy`:
+//
+//    * Thread A starts a method call, reads the value of the handle, but is interrupted
+//      before it can pass the handle over the FFI to Rust.
+//    * Thread B calls `destroy` and frees the underlying Rust struct.
+//    * Thread A resumes, passing the already-read handle value to Rust and triggering
+//      a use-after-free.
+//
+// One possible solution would be to use a `ReadWriteLock`, with each method call taking
+// a read lock (and thus allowed to run concurrently) and the special `destroy` method
+// taking a write lock (and thus blocking on live method calls). However, we aim not to
+// generate methods with any hidden blocking semantics, and a `destroy` method that might
+// block if called incorrectly seems to meet that bar.
+//
+// So, we achieve our goals by giving each instance an associated `AtomicLong` counter to track
+// the number of in-flight method calls, and an `AtomicBoolean` flag to indicate whether `destroy`
+// has been called. These are updated according to the following rules:
+//
+//    * The initial value of the counter is 1, indicating a live object with no in-flight calls.
+//      The initial value for the flag is false.
+//
+//    * At the start of each method call, we atomically check the counter.
+//      If it is 0 then the underlying Rust struct has already been destroyed and the call is aborted.
+//      If it is nonzero them we atomically increment it by 1 and proceed with the method call.
+//
+//    * At the end of each method call, we atomically decrement and check the counter.
+//      If it has reached zero then we destroy the underlying Rust struct.
+//
+//    * When `destroy` is called, we atomically flip the flag from false to true.
+//      If the flag was already true we silently fail.
+//      Otherwise we atomically decrement and check the counter.
+//      If it has reached zero then we destroy the underlying Rust struct.
+//
+// Astute readers may observe that this all sounds very similar to the way that Rust's `Arc<T>` works,
+// and indeed it is, with the addition of a flag to guard against multiple calls to `destroy`.
+//
+// The overall effect is that the underlying Rust struct is destroyed only when `destroy` has been
+// called *and* all in-flight method calls have completed, avoiding violating any of the expectations
+// of the underlying Rust code.
+//
+// This makes a cleaner a better alternative to _not_ calling `destroy()` as
+// and when the object is finished with, but the abstraction is not perfect: if the Rust object's `drop`
+// method is slow, and/or there are many objects to cleanup, and it's on a low end Android device, then the cleaner
+// thread may be starved, and the app will leak memory.
+//
+// In this case, `destroy`ing manually may be a better solution.
+//
+// The cleaner can live side by side with the manual calling of `destroy`. In the order of responsiveness, uniffi objects
+// with Rust peers are reclaimed:
+//
+// 1. By calling the `destroy` method of the object, which calls `rustObject.free()`. If that doesn't happen:
+// 2. When the object becomes unreachable, AND the Cleaner thread gets to call `rustObject.free()`. If the thread is starved then:
+// 3. The memory is reclaimed when the process terminates.
+//
+// [1] https://stackoverflow.com/questions/24376768/can-java-finalize-an-object-when-it-is-still-in-scope/24380219
+//
+
+
+public interface CompositeVerifyingKeyInterface {
+    
+    fun `toMultibase`(): kotlin.String
+    
+    companion object
+}
+
+open class CompositeVerifyingKey: Disposable, AutoCloseable, CompositeVerifyingKeyInterface
+{
+
+    @Suppress("UNUSED_PARAMETER")
+    /**
+     * @suppress
+     */
+    constructor(withHandle: UniffiWithHandle, handle: Long) {
+        this.handle = handle
+        this.cleanable = UniffiLib.CLEANER.register(this, UniffiCleanAction(handle))
+    }
+
+    /**
+     * @suppress
+     *
+     * This constructor can be used to instantiate a fake object. Only used for tests. Any
+     * attempt to actually use an object constructed this way will fail as there is no
+     * connected Rust object.
+     */
+    @Suppress("UNUSED_PARAMETER")
+    constructor(noHandle: NoHandle) {
+        this.handle = 0
+        this.cleanable = null
+    }
+
+    protected val handle: Long
+    protected val cleanable: UniffiCleaner.Cleanable?
+
+    private val wasDestroyed = AtomicBoolean(false)
+    private val callCounter = AtomicLong(1)
+
+    override fun destroy() {
+        // Only allow a single call to this method.
+        // TODO: maybe we should log a warning if called more than once?
+        if (this.wasDestroyed.compareAndSet(false, true)) {
+            // This decrement always matches the initial count of 1 given at creation time.
+            if (this.callCounter.decrementAndGet() == 0L) {
+                cleanable?.clean()
+            }
+        }
+    }
+
+    @Synchronized
+    override fun close() {
+        this.destroy()
+    }
+
+    internal inline fun <R> callWithHandle(block: (handle: Long) -> R): R {
+        // Check and increment the call counter, to keep the object alive.
+        // This needs a compare-and-set retry loop in case of concurrent updates.
+        do {
+            val c = this.callCounter.get()
+            if (c == 0L) {
+                throw IllegalStateException("${this.javaClass.simpleName} object has already been destroyed")
+            }
+            if (c == Long.MAX_VALUE) {
+                throw IllegalStateException("${this.javaClass.simpleName} call counter would overflow")
+            }
+        } while (! this.callCounter.compareAndSet(c, c + 1L))
+        // Now we can safely do the method call without the handle being freed concurrently.
+        try {
+            return block(this.uniffiCloneHandle())
+        } finally {
+            // This decrement always matches the increment we performed above.
+            if (this.callCounter.decrementAndGet() == 0L) {
+                cleanable?.clean()
+            }
+        }
+    }
+
+    // Use a static inner class instead of a closure so as not to accidentally
+    // capture `this` as part of the cleanable's action.
+    private class UniffiCleanAction(private val handle: Long) : Runnable {
+        override fun run() {
+            if (handle == 0.toLong()) {
+                // Fake object created with `NoHandle`, don't try to free.
+                return;
+            }
+            uniffiRustCall { status ->
+                UniffiLib.uniffi_did_sidekicks_fn_free_compositeverifyingkey(handle, status)
+            }
+        }
+    }
+
+    /**
+     * @suppress
+     */
+    fun uniffiCloneHandle(): Long {
+        if (handle == 0.toLong()) {
+            throw InternalException("uniffiCloneHandle() called on NoHandle object");
+        }
+        return uniffiRustCall() { status ->
+            UniffiLib.uniffi_did_sidekicks_fn_clone_compositeverifyingkey(handle, status)
+        }
+    }
+
+    override fun `toMultibase`(): kotlin.String {
+            return FfiConverterString.lift(
+    callWithHandle {
+    uniffiRustCall() { _status ->
+    UniffiLib.uniffi_did_sidekicks_fn_method_compositeverifyingkey_to_multibase(
+        it,
+        _status)
+}
+    }
+    )
+    }
+    
+
+    
+
+    
+
+
+    
+    companion object {
+        
+    @Throws(DidSidekicksException::class) fun `fromMultibase`(`multibase`: kotlin.String): CompositeVerifyingKey {
+            return FfiConverterTypeCompositeVerifyingKey.lift(
+    uniffiRustCallWithError(DidSidekicksException) { _status ->
+    UniffiLib.uniffi_did_sidekicks_fn_constructor_compositeverifyingkey_from_multibase(
+    
+        FfiConverterString.lower(`multibase`),_status)
+}
+    )
+    }
+    
+
+        
+    }
+    
+}
+
+
+/**
+ * @suppress
+ */
+public object FfiConverterTypeCompositeVerifyingKey: FfiConverter<CompositeVerifyingKey, Long> {
+    override fun lower(value: CompositeVerifyingKey): Long {
+        return value.uniffiCloneHandle()
+    }
+
+    override fun lift(value: Long): CompositeVerifyingKey {
+        return CompositeVerifyingKey(UniffiWithHandle, value)
+    }
+
+    override fun read(buf: ByteBuffer): CompositeVerifyingKey {
+        return lift(buf.getLong())
+    }
+
+    override fun allocationSize(value: CompositeVerifyingKey) = 8UL
+
+    override fun write(value: CompositeVerifyingKey, buf: ByteBuffer) {
+        buf.putLong(lower(value))
+    }
+}
+
+
+// This template implements a class for working with a Rust struct via a handle
+// to the live Rust struct on the other side of the FFI.
+//
+// There's some subtlety here, because we have to be careful not to operate on a Rust
+// struct after it has been dropped, and because we must expose a public API for freeing
+// theq Kotlin wrapper object in lieu of reliable finalizers. The core requirements are:
+//
+//   * Each instance holds an opaque handle to the underlying Rust struct.
+//     Method calls need to read this handle from the object's state and pass it in to
+//     the Rust FFI.
+//
+//   * When an instance is no longer needed, its handle should be passed to a
+//     special destructor function provided by the Rust FFI, which will drop the
+//     underlying Rust struct.
+//
+//   * Given an instance, calling code is expected to call the special
+//     `destroy` method in order to free it after use, either by calling it explicitly
+//     or by using a higher-level helper like the `use` method. Failing to do so risks
+//     leaking the underlying Rust struct.
+//
+//   * We can't assume that calling code will do the right thing, and must be prepared
+//     to handle Kotlin method calls executing concurrently with or even after a call to
+//     `destroy`, and to handle multiple (possibly concurrent!) calls to `destroy`.
+//
+//   * We must never allow Rust code to operate on the underlying Rust struct after
+//     the destructor has been called, and must never call the destructor more than once.
+//     Doing so may trigger memory unsafety.
+//
+//   * To mitigate many of the risks of leaking memory and use-after-free unsafety, a `Cleaner`
+//     is implemented to call the destructor when the Kotlin object becomes unreachable.
+//     This is done in a background thread. This is not a panacea, and client code should be aware that
+//      1. the thread may starve if some there are objects that have poorly performing
+//     `drop` methods or do significant work in their `drop` methods.
+//      2. the thread is shared across the whole library. This can be tuned by using `android_cleaner = true`,
+//         or `android = true` in the [`kotlin` section of the `uniffi.toml` file](https://mozilla.github.io/uniffi-rs/kotlin/configuration.html).
+//
+// If we try to implement this with mutual exclusion on access to the handle, there is the
+// possibility of a race between a method call and a concurrent call to `destroy`:
+//
+//    * Thread A starts a method call, reads the value of the handle, but is interrupted
+//      before it can pass the handle over the FFI to Rust.
+//    * Thread B calls `destroy` and frees the underlying Rust struct.
+//    * Thread A resumes, passing the already-read handle value to Rust and triggering
+//      a use-after-free.
+//
+// One possible solution would be to use a `ReadWriteLock`, with each method call taking
+// a read lock (and thus allowed to run concurrently) and the special `destroy` method
+// taking a write lock (and thus blocking on live method calls). However, we aim not to
+// generate methods with any hidden blocking semantics, and a `destroy` method that might
+// block if called incorrectly seems to meet that bar.
+//
+// So, we achieve our goals by giving each instance an associated `AtomicLong` counter to track
+// the number of in-flight method calls, and an `AtomicBoolean` flag to indicate whether `destroy`
+// has been called. These are updated according to the following rules:
+//
+//    * The initial value of the counter is 1, indicating a live object with no in-flight calls.
+//      The initial value for the flag is false.
+//
+//    * At the start of each method call, we atomically check the counter.
+//      If it is 0 then the underlying Rust struct has already been destroyed and the call is aborted.
+//      If it is nonzero them we atomically increment it by 1 and proceed with the method call.
+//
+//    * At the end of each method call, we atomically decrement and check the counter.
+//      If it has reached zero then we destroy the underlying Rust struct.
+//
+//    * When `destroy` is called, we atomically flip the flag from false to true.
+//      If the flag was already true we silently fail.
+//      Otherwise we atomically decrement and check the counter.
+//      If it has reached zero then we destroy the underlying Rust struct.
+//
+// Astute readers may observe that this all sounds very similar to the way that Rust's `Arc<T>` works,
+// and indeed it is, with the addition of a flag to guard against multiple calls to `destroy`.
+//
+// The overall effect is that the underlying Rust struct is destroyed only when `destroy` has been
+// called *and* all in-flight method calls have completed, avoiding violating any of the expectations
+// of the underlying Rust code.
+//
+// This makes a cleaner a better alternative to _not_ calling `destroy()` as
+// and when the object is finished with, but the abstraction is not perfect: if the Rust object's `drop`
+// method is slow, and/or there are many objects to cleanup, and it's on a low end Android device, then the cleaner
+// thread may be starved, and the app will leak memory.
+//
+// In this case, `destroy`ing manually may be a better solution.
+//
+// The cleaner can live side by side with the manual calling of `destroy`. In the order of responsiveness, uniffi objects
+// with Rust peers are reclaimed:
+//
+// 1. By calling the `destroy` method of the object, which calls `rustObject.free()`. If that doesn't happen:
+// 2. When the object becomes unreachable, AND the Cleaner thread gets to call `rustObject.free()`. If the thread is starved then:
+// 3. The memory is reclaimed when the process terminates.
+//
+// [1] https://stackoverflow.com/questions/24376768/can-java-finalize-an-object-when-it-is-still-in-scope/24380219
+//
+
+
 public interface CryptoSuiteProofOptionsInterface {
     
     companion object
@@ -1868,6 +2516,18 @@ open class CryptoSuiteProofOptions: Disposable, AutoCloseable, CryptoSuiteProofO
             return FfiConverterTypeCryptoSuiteProofOptions.lift(
     uniffiRustCallWithError(DidSidekicksException) { _status ->
     UniffiLib.uniffi_did_sidekicks_fn_constructor_cryptosuiteproofoptions_new_eddsa_jcs_2022(
+    
+        FfiConverterOptionalString.lower(`createdDtRfc3339`),FfiConverterString.lower(`verificationMethod`),FfiConverterOptionalString.lower(`proofPurpose`),FfiConverterOptionalSequenceString.lower(`context`),FfiConverterOptionalString.lower(`challenge`),_status)
+}
+    )
+    }
+    
+
+        
+    @Throws(DidSidekicksException::class) fun `newMldsa65Ed25519JcsPqeid`(`createdDtRfc3339`: kotlin.String?, `verificationMethod`: kotlin.String, `proofPurpose`: kotlin.String?, `context`: List<kotlin.String>?, `challenge`: kotlin.String?): CryptoSuiteProofOptions {
+            return FfiConverterTypeCryptoSuiteProofOptions.lift(
+    uniffiRustCallWithError(DidSidekicksException) { _status ->
+    UniffiLib.uniffi_did_sidekicks_fn_constructor_cryptosuiteproofoptions_new_mldsa65_ed25519_jcs_pqeid(
     
         FfiConverterOptionalString.lower(`createdDtRfc3339`),FfiConverterString.lower(`verificationMethod`),FfiConverterOptionalString.lower(`proofPurpose`),FfiConverterOptionalSequenceString.lower(`context`),FfiConverterOptionalString.lower(`challenge`),_status)
 }
@@ -5678,11 +6338,6 @@ public object FfiConverterTypeEddsaJcs2022Cryptosuite: FfiConverter<EddsaJcs2022
 //
 
 
-/**
- * A `SHA2` (SHA-256) (https://en.wikipedia.org/wiki/SHA-2) hasher with `RFC-8785` (https://datatracker.ietf.org/doc/html/rfc8785) in mind.
- *
- * It is capable of hashing any JSON structure w.r.t. `RFC-8785` (JSON Canonicalization Scheme - JCS).
- */
 public interface JcsSha256HasherInterface {
     
     /**
@@ -5704,11 +6359,6 @@ public interface JcsSha256HasherInterface {
     companion object
 }
 
-/**
- * A `SHA2` (SHA-256) (https://en.wikipedia.org/wiki/SHA-2) hasher with `RFC-8785` (https://datatracker.ietf.org/doc/html/rfc8785) in mind.
- *
- * It is capable of hashing any JSON structure w.r.t. `RFC-8785` (JSON Canonicalization Scheme - JCS).
- */
 open class JcsSha256Hasher: Disposable, AutoCloseable, JcsSha256HasherInterface
 {
 
@@ -5891,6 +6541,292 @@ public object FfiConverterTypeJcsSha256Hasher: FfiConverter<JcsSha256Hasher, Lon
     override fun allocationSize(value: JcsSha256Hasher) = 8UL
 
     override fun write(value: JcsSha256Hasher, buf: ByteBuffer) {
+        buf.putLong(lower(value))
+    }
+}
+
+
+// This template implements a class for working with a Rust struct via a handle
+// to the live Rust struct on the other side of the FFI.
+//
+// There's some subtlety here, because we have to be careful not to operate on a Rust
+// struct after it has been dropped, and because we must expose a public API for freeing
+// theq Kotlin wrapper object in lieu of reliable finalizers. The core requirements are:
+//
+//   * Each instance holds an opaque handle to the underlying Rust struct.
+//     Method calls need to read this handle from the object's state and pass it in to
+//     the Rust FFI.
+//
+//   * When an instance is no longer needed, its handle should be passed to a
+//     special destructor function provided by the Rust FFI, which will drop the
+//     underlying Rust struct.
+//
+//   * Given an instance, calling code is expected to call the special
+//     `destroy` method in order to free it after use, either by calling it explicitly
+//     or by using a higher-level helper like the `use` method. Failing to do so risks
+//     leaking the underlying Rust struct.
+//
+//   * We can't assume that calling code will do the right thing, and must be prepared
+//     to handle Kotlin method calls executing concurrently with or even after a call to
+//     `destroy`, and to handle multiple (possibly concurrent!) calls to `destroy`.
+//
+//   * We must never allow Rust code to operate on the underlying Rust struct after
+//     the destructor has been called, and must never call the destructor more than once.
+//     Doing so may trigger memory unsafety.
+//
+//   * To mitigate many of the risks of leaking memory and use-after-free unsafety, a `Cleaner`
+//     is implemented to call the destructor when the Kotlin object becomes unreachable.
+//     This is done in a background thread. This is not a panacea, and client code should be aware that
+//      1. the thread may starve if some there are objects that have poorly performing
+//     `drop` methods or do significant work in their `drop` methods.
+//      2. the thread is shared across the whole library. This can be tuned by using `android_cleaner = true`,
+//         or `android = true` in the [`kotlin` section of the `uniffi.toml` file](https://mozilla.github.io/uniffi-rs/kotlin/configuration.html).
+//
+// If we try to implement this with mutual exclusion on access to the handle, there is the
+// possibility of a race between a method call and a concurrent call to `destroy`:
+//
+//    * Thread A starts a method call, reads the value of the handle, but is interrupted
+//      before it can pass the handle over the FFI to Rust.
+//    * Thread B calls `destroy` and frees the underlying Rust struct.
+//    * Thread A resumes, passing the already-read handle value to Rust and triggering
+//      a use-after-free.
+//
+// One possible solution would be to use a `ReadWriteLock`, with each method call taking
+// a read lock (and thus allowed to run concurrently) and the special `destroy` method
+// taking a write lock (and thus blocking on live method calls). However, we aim not to
+// generate methods with any hidden blocking semantics, and a `destroy` method that might
+// block if called incorrectly seems to meet that bar.
+//
+// So, we achieve our goals by giving each instance an associated `AtomicLong` counter to track
+// the number of in-flight method calls, and an `AtomicBoolean` flag to indicate whether `destroy`
+// has been called. These are updated according to the following rules:
+//
+//    * The initial value of the counter is 1, indicating a live object with no in-flight calls.
+//      The initial value for the flag is false.
+//
+//    * At the start of each method call, we atomically check the counter.
+//      If it is 0 then the underlying Rust struct has already been destroyed and the call is aborted.
+//      If it is nonzero them we atomically increment it by 1 and proceed with the method call.
+//
+//    * At the end of each method call, we atomically decrement and check the counter.
+//      If it has reached zero then we destroy the underlying Rust struct.
+//
+//    * When `destroy` is called, we atomically flip the flag from false to true.
+//      If the flag was already true we silently fail.
+//      Otherwise we atomically decrement and check the counter.
+//      If it has reached zero then we destroy the underlying Rust struct.
+//
+// Astute readers may observe that this all sounds very similar to the way that Rust's `Arc<T>` works,
+// and indeed it is, with the addition of a flag to guard against multiple calls to `destroy`.
+//
+// The overall effect is that the underlying Rust struct is destroyed only when `destroy` has been
+// called *and* all in-flight method calls have completed, avoiding violating any of the expectations
+// of the underlying Rust code.
+//
+// This makes a cleaner a better alternative to _not_ calling `destroy()` as
+// and when the object is finished with, but the abstraction is not perfect: if the Rust object's `drop`
+// method is slow, and/or there are many objects to cleanup, and it's on a low end Android device, then the cleaner
+// thread may be starved, and the app will leak memory.
+//
+// In this case, `destroy`ing manually may be a better solution.
+//
+// The cleaner can live side by side with the manual calling of `destroy`. In the order of responsiveness, uniffi objects
+// with Rust peers are reclaimed:
+//
+// 1. By calling the `destroy` method of the object, which calls `rustObject.free()`. If that doesn't happen:
+// 2. When the object becomes unreachable, AND the Cleaner thread gets to call `rustObject.free()`. If the thread is starved then:
+// 3. The memory is reclaimed when the process terminates.
+//
+// [1] https://stackoverflow.com/questions/24376768/can-java-finalize-an-object-when-it-is-still-in-scope/24380219
+//
+
+
+public interface MlDsa65Ed25519JcsPqeidCryptosuiteInterface {
+    
+    fun `addProof`(`unsecuredDocument`: kotlin.String, `options`: CryptoSuiteProofOptions): kotlin.String
+    
+    fun `verifyProof`(`proof`: DataIntegrityProof, `docHash`: kotlin.String)
+    
+    companion object
+}
+
+open class MlDsa65Ed25519JcsPqeidCryptosuite: Disposable, AutoCloseable, MlDsa65Ed25519JcsPqeidCryptosuiteInterface
+{
+
+    @Suppress("UNUSED_PARAMETER")
+    /**
+     * @suppress
+     */
+    constructor(withHandle: UniffiWithHandle, handle: Long) {
+        this.handle = handle
+        this.cleanable = UniffiLib.CLEANER.register(this, UniffiCleanAction(handle))
+    }
+
+    /**
+     * @suppress
+     *
+     * This constructor can be used to instantiate a fake object. Only used for tests. Any
+     * attempt to actually use an object constructed this way will fail as there is no
+     * connected Rust object.
+     */
+    @Suppress("UNUSED_PARAMETER")
+    constructor(noHandle: NoHandle) {
+        this.handle = 0
+        this.cleanable = null
+    }
+
+    protected val handle: Long
+    protected val cleanable: UniffiCleaner.Cleanable?
+
+    private val wasDestroyed = AtomicBoolean(false)
+    private val callCounter = AtomicLong(1)
+
+    override fun destroy() {
+        // Only allow a single call to this method.
+        // TODO: maybe we should log a warning if called more than once?
+        if (this.wasDestroyed.compareAndSet(false, true)) {
+            // This decrement always matches the initial count of 1 given at creation time.
+            if (this.callCounter.decrementAndGet() == 0L) {
+                cleanable?.clean()
+            }
+        }
+    }
+
+    @Synchronized
+    override fun close() {
+        this.destroy()
+    }
+
+    internal inline fun <R> callWithHandle(block: (handle: Long) -> R): R {
+        // Check and increment the call counter, to keep the object alive.
+        // This needs a compare-and-set retry loop in case of concurrent updates.
+        do {
+            val c = this.callCounter.get()
+            if (c == 0L) {
+                throw IllegalStateException("${this.javaClass.simpleName} object has already been destroyed")
+            }
+            if (c == Long.MAX_VALUE) {
+                throw IllegalStateException("${this.javaClass.simpleName} call counter would overflow")
+            }
+        } while (! this.callCounter.compareAndSet(c, c + 1L))
+        // Now we can safely do the method call without the handle being freed concurrently.
+        try {
+            return block(this.uniffiCloneHandle())
+        } finally {
+            // This decrement always matches the increment we performed above.
+            if (this.callCounter.decrementAndGet() == 0L) {
+                cleanable?.clean()
+            }
+        }
+    }
+
+    // Use a static inner class instead of a closure so as not to accidentally
+    // capture `this` as part of the cleanable's action.
+    private class UniffiCleanAction(private val handle: Long) : Runnable {
+        override fun run() {
+            if (handle == 0.toLong()) {
+                // Fake object created with `NoHandle`, don't try to free.
+                return;
+            }
+            uniffiRustCall { status ->
+                UniffiLib.uniffi_did_sidekicks_fn_free_mldsa65ed25519jcspqeidcryptosuite(handle, status)
+            }
+        }
+    }
+
+    /**
+     * @suppress
+     */
+    fun uniffiCloneHandle(): Long {
+        if (handle == 0.toLong()) {
+            throw InternalException("uniffiCloneHandle() called on NoHandle object");
+        }
+        return uniffiRustCall() { status ->
+            UniffiLib.uniffi_did_sidekicks_fn_clone_mldsa65ed25519jcspqeidcryptosuite(handle, status)
+        }
+    }
+
+    
+    @Throws(DidSidekicksException::class)override fun `addProof`(`unsecuredDocument`: kotlin.String, `options`: CryptoSuiteProofOptions): kotlin.String {
+            return FfiConverterString.lift(
+    callWithHandle {
+    uniffiRustCallWithError(DidSidekicksException) { _status ->
+    UniffiLib.uniffi_did_sidekicks_fn_method_mldsa65ed25519jcspqeidcryptosuite_add_proof(
+        it,
+        FfiConverterString.lower(`unsecuredDocument`),FfiConverterTypeCryptoSuiteProofOptions.lower(`options`),_status)
+}
+    }
+    )
+    }
+    
+
+    
+    @Throws(DidSidekicksException::class)override fun `verifyProof`(`proof`: DataIntegrityProof, `docHash`: kotlin.String)
+        = 
+    callWithHandle {
+    uniffiRustCallWithError(DidSidekicksException) { _status ->
+    UniffiLib.uniffi_did_sidekicks_fn_method_mldsa65ed25519jcspqeidcryptosuite_verify_proof(
+        it,
+        FfiConverterTypeDataIntegrityProof.lower(`proof`),FfiConverterString.lower(`docHash`),_status)
+}
+    }
+    
+    
+
+    
+
+    
+
+
+    
+    companion object {
+         fun `fromSigningKey`(`signingKey`: CompositeSigningKey): MlDsa65Ed25519JcsPqeidCryptosuite {
+            return FfiConverterTypeMlDsa65Ed25519JcsPqeidCryptosuite.lift(
+    uniffiRustCall() { _status ->
+    UniffiLib.uniffi_did_sidekicks_fn_constructor_mldsa65ed25519jcspqeidcryptosuite_from_signing_key(
+    
+        FfiConverterTypeCompositeSigningKey.lower(`signingKey`),_status)
+}
+    )
+    }
+    
+
+         fun `fromVerifyingKey`(`verifyingKey`: CompositeVerifyingKey): MlDsa65Ed25519JcsPqeidCryptosuite {
+            return FfiConverterTypeMlDsa65Ed25519JcsPqeidCryptosuite.lift(
+    uniffiRustCall() { _status ->
+    UniffiLib.uniffi_did_sidekicks_fn_constructor_mldsa65ed25519jcspqeidcryptosuite_from_verifying_key(
+    
+        FfiConverterTypeCompositeVerifyingKey.lower(`verifyingKey`),_status)
+}
+    )
+    }
+    
+
+        
+    }
+    
+}
+
+
+/**
+ * @suppress
+ */
+public object FfiConverterTypeMlDsa65Ed25519JcsPqeidCryptosuite: FfiConverter<MlDsa65Ed25519JcsPqeidCryptosuite, Long> {
+    override fun lower(value: MlDsa65Ed25519JcsPqeidCryptosuite): Long {
+        return value.uniffiCloneHandle()
+    }
+
+    override fun lift(value: Long): MlDsa65Ed25519JcsPqeidCryptosuite {
+        return MlDsa65Ed25519JcsPqeidCryptosuite(UniffiWithHandle, value)
+    }
+
+    override fun read(buf: ByteBuffer): MlDsa65Ed25519JcsPqeidCryptosuite {
+        return lift(buf.getLong())
+    }
+
+    override fun allocationSize(value: MlDsa65Ed25519JcsPqeidCryptosuite) = 8UL
+
+    override fun write(value: MlDsa65Ed25519JcsPqeidCryptosuite, buf: ByteBuffer) {
         buf.putLong(lower(value))
     }
 }
